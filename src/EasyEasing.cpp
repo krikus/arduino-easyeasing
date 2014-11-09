@@ -64,6 +64,10 @@ float EasyEasing::currentValue(){
   }
 }
 
+float EasyEasing::easingSquareIn(float x){
+  return (2-x)*x;
+}
+
 void EasyEasing::update(){
   if (!_forceStop && _handler){
     float v = currentValue();

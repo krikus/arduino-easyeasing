@@ -22,7 +22,7 @@ public:
   void stop();
   float currentValue();
   void update();
-  float easingSquareIn(float) const;
+  float easingSquareIn(float);
 private:
   bool _forceStop;
   float _startVal, _stopVal;
