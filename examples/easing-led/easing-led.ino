@@ -1,4 +1,6 @@
 #include <EasyEasing.h>
+
+#include <EasyEasing.h>
 #define pin 10
 
 EasyEasing eas;
@@ -16,7 +18,7 @@ void setup(){
   eas.setEasing(&easing);
   pinMode(pin, OUTPUT);
   digitalWrite(pin, HIGH);
-  eas.start(255,155,1000);
+  eas.start(255,0,1000);
 }
 
 void loop(){
